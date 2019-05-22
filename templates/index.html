@@ -12,12 +12,26 @@
 
     <!-- Bootstrap core CSS -->
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet"> 
-    
-    
-
+    <link href="{{ url_for('static', filename='css/y.css') }}" rel="stylesheet" type="text/css">
   </head>
 
-  <body>
-    <img  src="/static/main_page.jpg" alt="Smiley face" > 
+  <body background="{{ url_for('static', filename='main_page.jpg') }}">
+    <div id="project">
+      <button class="block">Start a Project</button>
+    </div>
+    <div class="solcial">
+        <div><a id href="" ><img src="" /></a></div>
+        <br>
+        <div><a id href="" ><img src="" /></a></div>
+        <br>
+        <div><a id href="" ><img src="" /></a></div>
+    </div>
+    
+
+    <!-- <a id href="" ><img src="{{ url_for('static', filename='brain.jpg') }}" /></a> -->
+
+    <!-- <div id="br"></div>
+    <img  src="{{ url_for('static', filename='main_page.jpg') }}" alt="Smiley face" >  -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
   </body>
 </html>
