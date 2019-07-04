@@ -2,10 +2,16 @@
 from flask_mail import Mail, Message
 from flask_sqlalchemy import SQLAlchemy
 from flask import Blueprint, render_template, request, redirect, url_for, flash
+from flask_frozen import Freezer
 
 def create_app():
     app = Flask(__name__)
+    app.config.from_pyfile('settings.py')
     app.secret_key = 'development key'
+
+
+    freezer = Freezer(app)
+
 
 
     from .views import main
