@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<header>
+    <div class="row">
+        <div class="col-sm-1"><img src="{{ url_for('static', filename='brain.jpg') }}" alt="logo 1"></div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-1" id="nava"><p><a style="color:white" href="{{ url_for('main.project') }}">Project</a></p></div>
+        <div class="col-sm-1" id="nava"><p><a style="color:white" href="{{ url_for('main.careers') }}">Careers</a></p></div>
+        <div class="col-sm-1" id="nava"><p><a style="color:white" href="{{ url_for('main.contact') }}">Contact</a></p></div>
+        <div class="col-sm-1" id="nava"><p> <a style="color:white" href="{{ url_for('main.about') }}">About</a></p></div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2" ><button class="block" onclick="location.href='project'">Start a Project</button></div>
+        <div class="col-sm-1"></div>
+    </div>
+</header>
+
+<section class="container">
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</section>
+
+<section class="container">
+    <div class="row">
+        <div class="col-sm-11" id="tit0">
+            <h1 class="boldText" id="tita">404 Page</h1><h1 id="titb"> Not found ):</h1>
+            <br>
+            <br>
+            <h3 style="color: white;font-weight:normal">Looks like this page has vanished or is currently being updated,</h3>
+            <h3 style="color: white;font-weight:normal">Check back at a later time! Sorry /:</h3>
+        </div>
+        
+            <div class="col-sm-3"><button style="margin-left: 0px;font-weight: bold" class="block" onclick="location.href='/'">Take me home please!</button></div>
+
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer class="navbar navbar-fixed-bottom">
+    <div class="row">
+        <!-- <div class="col-sm-1"></div> -->
+        <div id="B" class="col-sm-1"><img src="{{ url_for('static', filename='B.png') }}" alt="logo 1"></div>
+        <div class="col-sm-3"><p id="cr"><br>&copy; StudioBlanks LLC, 2019. All Rights Reserved.</p></div>
+        <div class="col-sm-1" id="navab"><p><a style="color:white" href="{{ url_for('main.project') }}">Project</a></p></div>
+        <div class="col-sm-1" id="navab"><p><a style="color:white" href="{{ url_for('main.careers') }}">Careers</a></p></div>
+        <div class="col-sm-1" id="navab"><p><a style="color:white" href="{{ url_for('main.contact') }}">Contact</a></p></div>
+        <div class="col-sm-1" id="navab"><p> <a style="color:white" href="{{ url_for('main.about') }}">About</a></p></div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"><p id="navab">Email:    hello@blankstudio.ca</p></div>
+      
+
+    </div>
+</footer>
+{% endblock %}

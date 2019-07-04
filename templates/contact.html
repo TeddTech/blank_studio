@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<header>
+    <div class="row">
+        <div class="col-sm-1"><img src="{{ url_for('static', filename='brain.jpg') }}" alt="logo 1"></div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-1" id="nava"><p> <a style="color:white" href="{{ url_for('main.index') }}">Home</a></p></div>
+        <div class="col-sm-1" id="nava"><p><a style="color:white" href="{{ url_for('main.project') }}">Project</a></p></div>
+        <div class="col-sm-1" id="nava"><p><a style="color:white" href="{{ url_for('main.careers') }}">Careers</a></p></div>
+        <div class="col-sm-1" id="nava"><p> <a style="color:white" href="{{ url_for('main.about') }}">About</a></p></div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div>
+    </div>
+</header>
+
+<section class="container">
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</section>
+
+<section class="container">
+    <div class="col-sm-11" id="tit0">
+        <h1 class="boldText" id="tita">Contact</h1><h1 id="titb"> Us</h1>
+        <br>
+        <br>
+        <h4 style="color: white;font-weight:normal">Email:</h4><h4 style="color: white;font-weight:normal">hello@blankstudio.ca</h4>
+    </div>
+</section>
+
+<footer class="navbar navbar-fixed-bottom">
+        <div class="row">
+            <!-- <div class="col-sm-1"></div> -->
+            <div id="B" class="col-sm-1"><img src="{{ url_for('static', filename='B.png') }}" alt="logo 1"></div>
+            <div class="col-sm-3"><p id="cr"><br>&copy; StudioBlanks LLC, 2019. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+
+
+
+{% endblock %}

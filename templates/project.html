@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<header>
+    <div class="row">
+        <div class="col-sm-1"><img src="{{ url_for('static', filename='brain.jpg') }}" alt="logo 1"></div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-1" id="nava"><p> <a style="color:white" href="{{ url_for('main.index') }}">Home</a></p></div>
+        <div class="col-sm-1" id="nava"><p><a style="color:white" href="{{ url_for('main.careers') }}">Careers</a></p></div>
+        <div class="col-sm-1" id="nava"><p><a style="color:white" href="{{ url_for('main.contact') }}">Contact</a></p></div>
+        <div class="col-sm-1" id="nava"><p> <a style="color:white" href="{{ url_for('main.about') }}">About</a></p></div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div>
+    </div>
+</header>
+
+<section class="container">
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</section>
+
+<section class="container">
+    <div class="row">
+        <div class=col-sm-12>
+            <div id="contact-form" class="contact-form">
+                <h1 class="contact-form_title">Tell us about you and your project</h1>
+                <div class="separator"></div>
+                <br>
+                {% if success %}
+                    <h3>Your request has been sent.</h3>
+                    <h3>Please allow 24hrs for us to get back to you.</h3>
+                {% else %}
+                    <form class='form' action="" method="POST">
+                        {{ form.hidden_tag() }}
+
+                        <p>
+                            {{ form.name(placeholder="Name") }}
+                        </p>
+                
+                        <p>
+                            {{ form.email(placeholder="Email") }}
+                        </p>
+                    
+                        <p>
+                            {{ form.subject(placeholder="Type of Project") }}
+                        </p>
+                    
+
+                        <p>
+                            {{ form.message(placeholder="Describe Project") }}
+                        </p>
+                        <button class="button" onclick='{{ form.submit }}'>Send</button>         
+                    </form>
+                {% endif %}
+            </div>
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.4"></script>
+            <script src="{{url_for('static', filename='js/form.js')}}"></script>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+        <div class="row">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </section>
+<footer class="navbar navbar-fixed-bottom">
+        <div class="row">
+            <!-- <div class="col-sm-1"></div> -->
+            <div id="B" class="col-sm-1"><img src="{{ url_for('static', filename='B.png') }}" alt="logo 1"></div>
+            <div class="col-sm-3"><p id="cr"><br>&copy; StudioBlanks LLC, 2019. All Rights Reserved.</p></div>
+
+        </div>
+    </footer>
+
+
+
+{% endblock %}

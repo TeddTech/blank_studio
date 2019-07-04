@@ -1,37 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+{% extends 'base.html' %}
 
-    <title>Blank Studio</title>
+{% block body %}
+<header>
+  <div class="row">
+      <div class="col-sm-1"><img src="{{ url_for('static', filename='brain.jpg') }}" alt="logo 1"></div>
+      <div class="col-sm-8"></div>
+      <div class="col-sm-2" ><button class="block" onclick="location.href='project'">Start a Project</button></div>
+      <div class="col-sm-1"></div>
+  </div>
+</header>
 
-    <!-- Bootstrap core CSS -->
-    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet"> 
-    <link href="{{ url_for('static', filename='css/y.css') }}" rel="stylesheet" type="text/css">
-  </head>
+<section class="container">
+  <div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+</section>
 
-  <body background="{{ url_for('static', filename='main_page.jpg') }}">
-    <div id="project">
-      <button class="block">Start a Project</button>
+<section class="container">
+  <div class="row">
+    <div class="col-sm-7" id="tit0"><h1 class="boldText" id="tita">Take your brand to new</h1><h1 id="titb"> horizons</h1></div>
+  </div>
+</section>
+
+<br>
+
+<section class="container">
+  <div class="row">
+    <div class="col-sm-11" id="tit1">
+      <p id="word0">
+          Blankstudio offers  <a id="thin" style="font-weight:lighter; color:white; text-decoration: none;"> worldclass </a> brand solutions to<br>brands of any size.
+      </p>
+      <button class="block0" onclick="location.href='about'" type="button">Learn More</button>
     </div>
-    <div class="solcial">
-        <div><a id href="" ><img src="" /></a></div>
+    <div class="col-sm-1" id="solcial">
+        <div><a id href="https://www.instagram.com/studioisblank/"  target="_blank"><img src="{{ url_for('static', filename='instagram.png') }}" /></a></div>
         <br>
-        <div><a id href="" ><img src="" /></a></div>
         <br>
-        <div><a id href="" ><img src="" /></a></div>
+        <div><a id href="https://twitter.com/studioisblank" target="_blank"><img src="{{ url_for('static', filename='twitter.png') }}" /></a></div>
+        <br>
+        <br>
+        <div><a id href="https://www.facebook.com/studioisblank/" target="_blank"><img src="{{ url_for('static', filename='facebook.png') }}" /></a></div>
     </div>
-    
 
-    <!-- <a id href="" ><img src="{{ url_for('static', filename='brain.jpg') }}" /></a> -->
+  </div>
+</section>
+<section class="container">
+  <div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+</section>
 
-    <!-- <div id="br"></div>
-    <img  src="{{ url_for('static', filename='main_page.jpg') }}" alt="Smiley face" >  -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
-  </body>
-</html>
+<footer class="navbar">
+  <div class="row">
+    <!-- <div class="col-sm-1"></div> -->
+    <div id="B" class="col-sm-1"><img src="{{ url_for('static', filename='B.png') }}" alt="logo 1"></div>
+    <div class="col-sm-3"><p id="cr"><br>&copy; StudioBlanks LLC, 2019. All Rights Reserved.</p></div>
+    <div class="col-sm-5"></div>
+    <div class="col-sm-1"> <div class="btn-toggle-nav" onclick="toggleNav()" style='background-image: url("./static/hamburger.png");'></div></div>
+    <aside class="nav-sidebar">
+        <ul>
+            <li><span>  Welcome to   </span ></li>
+            <p id="blanks">    Blankstudio  </p>
+            <br>
+            <br>
+            <br>
+            <br>
+          
+        
+            <li><a onclick="location.href='about'" id="a">About</a></li>
+            <hr style="width:40%; background-color: black;">
+            <li><a onclick="location.href='project'" >Projects</a></li>
+            <li><a onclick="location.href='careers'">Careers</a></li>
+            <li><a onclick="location.href='contact'">Contact</a></li>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p id="phrase">If you're not supposed to eat at night,</p>
+            <br>
+            <p id="phrase">why is there a light</p>
+            <br>
+            <p id="phrase">bulb in the refrigerator?</p>
+        </ul>
+    </aside>
+      
+    <script src="{{url_for('static', filename='js/done.js')}}"></script>
+  </div>
+</footer>
+
+
+<!-- <div id="logos">
+
+  <img src="{{ url_for('static', filename='B.png') }}" alt="logo 2">
+  <p>&#169; StudioBlanks LLC, 2019. All Rights Reserved.</p>
+
+</div> -->
+<!-- <div id="project">
+  <button class="block">Start a Project</button>
+</div> -->
+
+
+
+<!-- <a id href="" ><img src="{{ url_for('static', filename='brain.jpg') }}" /></a> -->
+
+<!-- <div id="br"></div>
+<img  src="{{ url_for('static', filename='main_page.jpg') }}" alt="Smiley face" >  -->
+{% endblock %}

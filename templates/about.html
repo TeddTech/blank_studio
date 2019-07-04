@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<header>
+    <div class="row">
+        <div class="col-sm-1"><img src="{{ url_for('static', filename='brain.jpg') }}" alt="logo 1"></div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-1" id="nava"><p> <a style="color:white" href="{{ url_for('main.index') }}">Home</a></p></div>
+        <div class="col-sm-1" id="nava"><p><a style="color:white" href="{{ url_for('main.project') }}">Project</a></p></div>
+        <div class="col-sm-1" id="nava"><p><a style="color:white" href="{{ url_for('main.careers') }}">Careers</a></p></div>
+        <div class="col-sm-1" id="nava"><p><a style="color:white" href="{{ url_for('main.contact') }}">Contact</a></p></div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2" ><button class="block" onclick="location.href='project'">Start a Project</button></div>
+        <div class="col-sm-1"></div>
+    </div>
+</header>
+
+<section class="container">
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</section>
+
+<section class="container">
+    <div class="row">
+        <div class="col-sm-11" id="tit0">
+            <h1 class="boldText" id="tita">About</h1><h1 id="titb"> Us</h1>
+            <br>
+            <br>
+            <h4 style="color: white;font-weight:normal">The future of your brand starts with us!</h4>
+            <h4 style="color: white;font-weight:normal">Have a vision how you want your brand to excel?</h4>
+            <h4 style="color: white;font-weight:normal">Lets share that vision together and excel as one!</h4>
+        </div>
+        <div class="col-sm-1" id="solcial">
+            <div><a id href="https://www.instagram.com/studioisblank/"  target="_blank"><img src="{{ url_for('static', filename='instagram.png') }}" /></a></div>
+            <br>
+            <br>
+            <div><a id href="https://twitter.com/studioisblank" target="_blank"><img src="{{ url_for('static', filename='twitter.png') }}" /></a></div>
+            <br>
+            <br>
+            <div><a id href="https://www.facebook.com/studioisblank/" target="_blank"><img src="{{ url_for('static', filename='facebook.png') }}" /></a></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-sm-6"></div>
+        <div class="col-sm-4">
+            <h4 style="color: white;font-weight:normal">We're not just a design studio, we're family,</h4>
+            <h4 style="color: white;font-weight:normal">and we provide the very best for each one</h4>
+            <h4 style="color: white;font-weight:normal">of our members.</h4>
+            <div style="background-color:white; height: 10px; margin-top: 20px"></div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<br>
+<section class="container">
+    <div class="row">
+        <div class="col-sm-8" id="tit0">
+            <h1 class="boldText" id="tita">Brand</h1><h1 id="titb"> Marketing</h1>
+            <br>
+            <br>
+            <h4 style="color: white;font-weight:normal">Content & Strategy</h4>
+            <h4 style="color: white;font-weight:normal">Solcial Media</h4>
+            <h4 style="color: white;font-weight:normal">Public Relations</h4>
+            <h4 style="color: white;font-weight:normal">Community Management</h4>
+            <h4 style="color: white;font-weight:normal">Events</h4>
+        </div>
+        <div class="col-sm-3" id="tit0">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="boldText" id="tita">Brand</h1><h1 id="titb"> Identity</h1>
+            <br>
+            <br>
+            <h4 style="color: white;font-weight:normal">Brand Naming</h4>
+            <h4 style="color: white;font-weight:normal">Diagnosing & Positioning</h4>
+            <h4 style="color: white;font-weight:normal">Concept Development</h4>
+            <h4 style="color: white;font-weight:normal">Identity Design</h4>
+
+        </div>
+
+    </div>
+</section>
+<br>
+<br>
+<br>
+<section class="container">
+    <div class="row">
+        <div class="col-sm-7" id="tit0">
+            <h1 class="boldText" id="tita">intuitive webdesign</h1><h1 id="titb"> & development</h1>
+            <br>
+            <br>
+            <h4 style="color: white;font-weight:normal">Free Consultation</h4>
+            <h4 style="color: white;font-weight:normal">Feasibility</h4>
+            <h4 style="color: white;font-weight:normal">Project Strategy</h4>
+            <h4 style="color: white;font-weight:normal">Marketing Strategy</h4>
+            <h4 style="color: white;font-weight:normal">Proof of Concept</h4>
+            <h4 style="color: white;font-weight:normal">Present to Client</h4>
+            <h4 style="color: white;font-weight:normal">AND WALLAH.. You got a brand new website!</h4>
+        </div>
+        <div class="col-sm-5" id="tit0">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="boldText" id="tita">Start a Project Today!</h1>
+            <br>
+            <div class="col-sm-5"><button style="margin-left: 0px;font-weight: bold" class="block" onclick="location.href='project'">GO!</button></div>
+
+        </div>
+
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer class="navbar">
+    <div class="row">
+        <!-- <div class="col-sm-1"></div> -->
+        <div id="B" class="col-sm-1"><img src="{{ url_for('static', filename='B.png') }}" alt="logo 1"></div>
+        <div class="col-sm-3"><p id="cr"><br>&copy; StudioBlanks LLC, 2019. All Rights Reserved.</p></div>
+        
+        <div class="col-sm-1" id="navab"><p> <a style="color:white" href="{{ url_for('main.index') }}">Home</a></p></div>
+        <div class="col-sm-1" id="navab"><p><a style="color:white" href="{{ url_for('main.project') }}">Project</a></p></div>
+        <div class="col-sm-1" id="navab"><p><a style="color:white" href="{{ url_for('main.careers') }}">Careers</a></p></div>
+        <div class="col-sm-1" id="navab"><p><a style="color:white" href="{{ url_for('main.contact') }}">Contact</a></p></div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"><p id="navab">Email:    hello@blankstudio.ca</p></div>
+      
+
+    </div>
+</footer>
+{% endblock %}
