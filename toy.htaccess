@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^(.*)$ /home/uekcnlp77w6e/public_html/blank_studio/cgi-bin/blank.cgi/$1 [L]
