@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: gunicorn blank_studio:app
